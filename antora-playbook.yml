@@ -18,4 +18,4 @@ ui:
   - path: .nojekyll
 output: 
   clean: true
-  dir: ./site
+  dir: ./docs
