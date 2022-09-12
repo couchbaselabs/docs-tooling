@@ -10,11 +10,6 @@ on:
     branches: [ "style-guide-site" ]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,6 +32,16 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with: 
           path: ./build/site
+  deploy:
+    needs: build
+    permissions: 
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
