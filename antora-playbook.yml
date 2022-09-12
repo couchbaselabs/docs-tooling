@@ -1,6 +1,6 @@
 site:
   title: Couchbase Documentation Style Guide
-  url: https://labs.couchbase.com/style-guide-site
+  url: https://labs.couchbase.com/docs-tooling
 content:
   sources:
   - url: .
