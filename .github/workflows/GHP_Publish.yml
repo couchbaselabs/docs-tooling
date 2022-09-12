@@ -1,4 +1,4 @@
-This is a workflow to publish the Style Guide site to GitHub Pages
+# This is a workflow to publish the Style Guide site to GitHub Pages
 
 name: Publish to GitHub Pages
 
