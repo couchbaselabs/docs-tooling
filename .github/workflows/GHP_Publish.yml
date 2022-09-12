@@ -10,6 +10,11 @@ on:
     branches: [ "style-guide-site" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,19 +22,21 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
       - name: Install Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
       - name: Install Antora 
         run: npm i -global @antora/cli@3.1
       - name: Install Antora Site Generator
         run: npm i -global @antora/site-generator@3.1
-      - name: Install Gulp CLI
-        run: npm i -global gulp-cli
       - name: Generate Site
         run: npx antora antora-playbook.yml
-      - name: Publish to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/site
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with: 
+          path: ./build/site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
