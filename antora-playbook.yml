@@ -16,3 +16,6 @@ ui:
       static_files:
       - .nojekyll
   - path: .nojekyll
+output: 
+  clean: true
+  dir: ./site
