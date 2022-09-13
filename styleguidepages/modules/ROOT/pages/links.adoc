@@ -1,1 +1,15 @@
 = Links
+
+Follow the https://developers.google.com/style/link-text[Google Developer Style Guide^]'s guidance on how to write link text. 
+
+== Internal Links 
+
+Use the `xref` syntax for all links to content within the documentation repositories, SDK references, and API references. For more information about the `xref` syntax in Antora, see https://docs.couchbase.com/home/contribute/cross-references.html[Cross References^].
+
+Where possible, use an evergreen link. Evergreen links help cut down on maintenance when tooling for references and other resources change. For a list of evergreen links, see https://github.com/couchbase/docs-site/blob/master/etc/nginx/snippets/rewrites.conf[the rewrites.conf file^].
+
+
+== External Links
+
+For links to third-party websites, follow the guidance in the https://developers.google.com/style/links-external[Links to other sites^] topic for when and how to link. 
+

@@ -11,9 +11,9 @@ The following are some general principles of writing in the Couchbase Style:
 
 == Write in American English
 
-Use American English spelling, not British or Canadian English. The Vale automated spellcheck is based on an American English dictionary. 
+Use American English spelling, not British or Canadian English. The Vale automated spellcheck uses an American English dictionary. 
 
-+If you need to check the spelling of a word, refer to the https://www.merriam-webster.com/[Merriam-Webster's Collegiate Dictionary, Eleventh Edition^]. 
+If you need to check the spelling of a word, refer to the https://www.merriam-webster.com/[Merriam-Webster's Collegiate Dictionary, Eleventh Edition^]. 
 
 If Vale flags a product name or other technical industry term as incorrect: 
 
@@ -40,7 +40,7 @@ For more information, see https://developers.google.com/style/tense[Present tens
 
 You can address the user as "you." 
 
-Don't use the first person: Vale flags the use of any first person plurals (we, our, us, let's) in your text. Don't use any third person gendered pronouns.
+Don't use the first person. Vale flags the use of any first person plurals (we, our, us, let's) in your text. Don't use any third person gendered pronouns.
 
 For more information, see https://developers.google.com/style/person[Second person^] in the Google Developer Style Guide.
 
@@ -82,17 +82,17 @@ Passive voice weakens your writing and can make it harder to parse meaning. Stic
 
 Here are some tips to help you with active voice: 
 
-* Think about what's actually _doing_ the action you're describing. Focus on emphasizing the actor. 
-* Find or push back for more information if you can't clearly identify the actor. Ask the developer what's actually doing what in a scenario. 
-* If the sentence doesn't make sense in active voice or the correct emphasis is lost, you can use the passive voice.
+* Think about what's actually _doing_ the action you're describing. Emphasize the actor. 
+* Find or push back for more information if you can't identify the actor. Ask the developer what's actually doing what in a scenario. 
+* If the sentence doesn't make sense in active voice or you lose the correct emphasis, you can use the passive voice.
 
-For more information on active voice, refer to https://developers.google.com/style/voice[Active voice^] in the Google Developer Style Guide.
+For more information about active voice, see https://developers.google.com/style/voice[Active voice^] in the Google Developer Style Guide.
 
 == Use Plain Language and Contractions
 
 Plain language means avoiding jargon or overly technical phrases when a simpler word works best. 
 
-Use contractions. For more information, refer to https://developers.google.com/style/contractions[Contractions^] in the Google Developer Style Guide.
+Use contractions. For more information, see https://developers.google.com/style/contractions[Contractions^] in the Google Developer Style Guide.
 
 |===
 | Acceptable | Not Acceptable
@@ -105,6 +105,10 @@ Use contractions. For more information, refer to https://developers.google.com/s
 
 | You can't connect a hosted zone through the AWS CLI command in Capella. 
 | You cannot associate the hosted zone via the AWS CLI command in Capella.
+
+| The indexes that the Search Service creates and uses are entirely separate from and different to those of the Index Service. However, if the Index Service and Query Service are also deployed on the cluster, the facilities of the Search Service can be called on by means of the N1QL language — which provides the principal interface to the Query and Index Services. This is principally done through the use of Search Functions.
+| Search Service indexes are not the same as Index Service indexes. If you deploy the Index Service, Query Service, and Search Service on the same cluster, you can use the Search Service through the N1QL query language. For more information, see Search Functions.
+
 |===
 
 == Use Simple Sentences and Short Paragraphs

@@ -10,12 +10,12 @@ Capitalization:: Use title case for all headings:
 +
 * Always capitalize the first word. 
 * Capitalize the main nouns, verbs, and adjectives. 
-* Leave articles, coordinating conjunctions, prepositions and other connecting words in lower case (and, the, to). 
+* Leave articles, coordinating conjunctions, prepositions and other connecting words in lowercase (and, the, to). 
 +
 This matches the Chicago Manual of Style. Vale flags any heading capitalization that doesn't match the Chicago style.
 Length:: Try to keep headings as short and to-the-point as possible. Try to fit your heading in a single line. 
-Frequency:: Use a heading whenever it makes sense to do so - usually when you're starting a new thought or need to highlight something new and important to the user. Keep headings useful, and make sure that you always have content in between two headings. Vale flags any headings that appear directly on top of each other with no content in between. 
-Depth:: Do not go past an H4 heading in your text. You don't need to have more than 4 levels of headings in your text. 
+Frequency:: Use a heading whenever it makes sense to do so. Add a heading when you're starting a new thought or need to highlight something new and important to the user. Keep headings useful, and make sure that you always have content in between two headings. Vale flags any headings that appear directly on top of each other with no content in between. 
+Depth:: Don't go past an H4 heading. You don't need to have more than 4 levels of headings in your text. 
 
 The content of your H1 heading also needs to match the type of topic you're writing: 
 
@@ -37,7 +37,8 @@ Create an Index
 Explore Your Data
 
 |Reference topic
-|Reference headings are short phrases that state what kind of reference content the user finds on a page. ##Does the heading need to include the word "reference"?## 
+|Reference headings are short phrases that state what kind of reference content the user finds on a page. 
+// Does the heading need to include the word "reference"?
 a| Audit Events
 
 Error Messages 
