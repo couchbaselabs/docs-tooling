@@ -7,11 +7,19 @@ on:
   push:
     branches: [ "style-guide-site" ]
   pull_request:
+    types: 
+      - closed
     branches: [ "style-guide-site" ]
   workflow_dispatch:
 
 jobs:
+  if_merged_or_push:
+    if: github.event.pull_request.merged == true || github.event_name == push
+    steps: 
+      - run: |
+          echo A PR has been merged or a push has occurred.
   build:
+    needs: if_merged_or_push
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
