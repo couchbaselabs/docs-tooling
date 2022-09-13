@@ -10,10 +10,8 @@ All topic files should use the `.adoc` file extension.
 
 For example: 
 
-`indexes.adoc`
-
-`creating-buckets.adoc`
-
-`run-N1QL-queries.adoc`
+* `indexes.adoc`
+* `creating-buckets.adoc`
+* `run-N1QL-queries.adoc`
 
 CAUTION: Don't retroactively change filenames for published topics. This causes tooling issues and means that we have to create and maintain more redirects.

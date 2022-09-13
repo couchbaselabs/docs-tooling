@@ -6,5 +6,4 @@
 ** xref:images-diagrams.adoc[]
 ** xref:tables.adoc[]
 ** xref:filenames.adoc[]
-* Linking
-** xref:links.adoc[]
+* xref:links.adoc[]
