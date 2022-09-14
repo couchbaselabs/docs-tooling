@@ -28,13 +28,15 @@ If you need to add annotations to a screenshot, use a transparent rectangle with
 
 The rectangle's border should have a 5px width with no rounded corners. The inside of the rectangle should be transparent. 
 
-Use the Couchbase Red for the rectangle's border: 
+Use Couchbase Red for the rectangle's border: 
 
-Hex: #EA2328
-CMYK: 1 99 100 0
-RGB: 234 35 40 
+*Hex*: #EA2328
+*CMYK*: 1 99 100 0
+*RGB*: 234 35 40 
 
 Make sure the rectangle surrounds the part of the screenshot you want to highlight. 
+
+image::../assets/annotation-example.png[,,align=center]
 
 == Diagrams 
 
