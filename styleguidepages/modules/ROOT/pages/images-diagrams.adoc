@@ -34,9 +34,9 @@ Use Couchbase Red for the rectangle's border:
 *CMYK*: 1 99 100 0
 *RGB*: 234 35 40 
 
-Make sure the rectangle surrounds the part of the screenshot you want to highlight. 
+Make sure the rectangle surrounds the part of the screenshot you want to highlight: 
 
-image::../assets/annotation-example.png[,,align=center]
+image::annotation-example.png[,,align=center]
 
 == Diagrams 
 
