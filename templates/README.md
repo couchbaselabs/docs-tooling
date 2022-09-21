@@ -14,10 +14,10 @@ This section contains AsciiDoc templates which you can use as a starting point f
 The templates are divided into four topic types.
 Within each of those topic types there may be a number of templates.
 
-* Tutorials -- learning
-* How-to Guides -- tasks
-* Explanation -- concepts
-* Reference -- information
+* Tutorials &mdash; learning
+* How-to Guides &mdash; tasks
+* Explanation &mdash; concepts
+* Reference &mdash; information
 
 For further information, refer to https://documentation.divio.com.
 
