@@ -1,0 +1,73 @@
+= Title of Function Reference
+:page-topic-type: reference
+:imagesdir: ../assets/images
+:description: One-sentence abstract for SEO.
+
+[abstract]
+{description}
+
+Introductory paragraphs of context -- abstracts generally aren't descriptive enough.
+This section may contain level 2 headings if longer explanations are necessary.
+
+[[fn-function-name,FUNCTION_NAME()]]
+== FUNCTION_NAME(`expr` [, `expr`])
+
+// Optional: only for functions with synonyms
+This function has a synonym <<fn-synonym-name>>.
+
+=== Description
+
+Description of the purpose of the function.
+
+=== Arguments
+
+// "None" if there are no arguments.
+// Always include this section.
+
+expr:: [Required] Description of required argument.
+expr:: [Optional] Description of optional argument.
+
+=== Return Values
+
+Data type and value returned by the function in normal operation.
+
+Optionally describe the data types and values returned by the function in edge cases, for example if one of the required arguments is NULL or MISSING.
+
+=== Example
+
+====
+One-line description of the example.
+
+[source,sql++]
+----
+SELECT ARRAY_AGG(["abc",1,NULL]) AS array_aggregate;
+----
+
+.Results
+[source,json]
+----
+[
+  {
+    "array_aggregate": [
+      [
+        "abc",
+        1,
+        null
+      ]
+    ]
+  }
+]
+----
+====
+
+[[fn-synonym-name,SYNONYM_NAME()]]
+== SYNONYM_NAME(`expr` [, `expr`])
+
+Synonym of <<fn-function-name>>.
+
+//... repeat functions as necessary
+
+== Related Links
+
+Associative navigation links.
+Omit if unnecessary.
