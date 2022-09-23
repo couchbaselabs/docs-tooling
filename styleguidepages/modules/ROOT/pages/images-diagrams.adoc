@@ -12,7 +12,7 @@ Concept:: Avoid screenshots in concept topics. Use Kroki diagrams to explain con
 +
 If the concept topic is a basic, introductory guide to the UI, then consider adding one screenshot to show the UI. 
 
-Task:: Don't add a screenshot for every step in a task. You don't need to add a screenshot to show the result of an action, unless it's unexpected, unusual, or hard to explain through text. 
+How-tos and Tutorials:: Don't add a screenshot for every step in a task. You don't need to add a screenshot to show the result of an action, unless it's unexpected, unusual, or hard to explain through text. 
 
 Reference:: Avoid images in reference topics. 
 
@@ -37,6 +37,8 @@ Use Couchbase Red for the rectangle's border:
 Make sure the rectangle surrounds the part of the screenshot you want to highlight: 
 
 image::annotation-example.png[,,align=center]
+
+For more information on how to specify the format and add an image in Antora, see https://docs.couchbase.com/home/contribute/basics.html#images[Images] in the Contributing to the Documentation guide.
 
 == Diagrams 
 

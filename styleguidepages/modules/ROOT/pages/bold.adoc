@@ -1,0 +1,15 @@
+= Bold
+
+Use bold to format UI elements, such as: 
+
+* Menu items 
+* Tab names 
+* Dialog names
+
+Surround a word or phrase with asterixes (*) to make it render as bold in Antora. For more information, see https://docs.couchbase.com/home/contribute/basics.html#bold-italic-and-code-styles[] in the Contributing to the Documentation guide.
+
+Use the Antora `btn:` macro for buttons and named items that the user clicks in the UI. For example, btn:[Submit].
+
+Use the `menu:[]` macro to format menu navigation. For example, menu:File[Save]. 
+
+For more information on how to use the `btn:` and `menu:[]` macros, see https://docs.couchbase.com/home/contribute/basics.html#ui-macros[] in the Contributing to the Documentation guide.

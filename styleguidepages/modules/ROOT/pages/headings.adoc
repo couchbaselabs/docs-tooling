@@ -26,7 +26,7 @@ a| Clusters
 
 Indexes
 
-|Task topic
+|How-to or Tutorial topic
 |Task headings are short imperative phrases that start with a verb that does something to a noun. 
 a|Delete a Cluster
 
@@ -44,3 +44,5 @@ Error Messages
 Rebalance Reports
 
 |===
+
+Format headings using an equals sign (=). The number of equals signs corresponds to the heading depth that Antora renders. For more information, see https://docs.couchbase.com/home/contribute/pages.html[] in the Contributing to the Documentation guide.

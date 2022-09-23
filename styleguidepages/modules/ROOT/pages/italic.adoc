@@ -1,0 +1,3 @@
+= Italic
+
+Don't use italic to format text in the Couchbase documumentation. 
