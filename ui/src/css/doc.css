@@ -384,7 +384,7 @@
 
 .doc .admonitionblock td.content,
 .doc .colist .admonitionblock td.content {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--body-font-family);
   flex: 1;
   font-size: 0.9375rem;
   hyphens: auto;
