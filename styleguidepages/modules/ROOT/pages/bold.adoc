@@ -2,14 +2,18 @@
 
 Use bold to format UI elements, such as: 
 
-* Menu items 
+* Single menu items 
 * Tab names 
 * Dialog names
 
-Surround a word or phrase with asterixes (*) to make it render as bold in Antora. For more information, see https://docs.couchbase.com/home/contribute/basics.html#bold-italic-and-code-styles[] in the Contributing to the Documentation guide.
+Surround a word or phrase with asterixes (*) to make it render as bold in Antora. For more information, see https://docs.couchbase.com/home/contribute/basics.html#bold-italic-and-code-styles[Bold, Italic, and Code Styles] in the Contributing to the Documentation guide.
 
-Use the Antora `btn:` macro for buttons and named items that the user clicks in the UI. For example, btn:[Submit].
+== Buttons, Menus, and Keyboard Keys
 
-Use the `menu:[]` macro to format menu navigation. For example, menu:File[Save]. 
+To emphasize and make menu navigation stand out in your text, use the Menu UI Macro. For more information, see xref:menu-ui-macro.adoc[].
 
-For more information on how to use the `btn:` and `menu:[]` macros, see https://docs.couchbase.com/home/contribute/basics.html#ui-macros[] in the Contributing to the Documentation guide.
+To emphasize buttons and make them stand out in your text, use the Button Macro. For more information, see xref:button-macro.adoc[].
+
+To emphasize keyboard shortcuts and other keyboard interactions in your text, use the Keyboard Macro. For more information, see xref:keyboard-macro.adoc[]
+
+For more information on how to use the `btn:[]`, `menu:[]`, and `kbd:[]` macros, see https://docs.couchbase.com/home/contribute/basics.html#ui-macros[Button, Keyboard, and Menu UI Macros] in the Contributing to the Documentation guide.
