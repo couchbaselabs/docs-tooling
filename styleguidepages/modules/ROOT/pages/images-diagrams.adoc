@@ -43,3 +43,5 @@ For more information on how to specify the format and add an image in Antora, se
 == Diagrams 
 
 Use https://kroki.io/[Kroki^] to generate all diagrams. Save diagrams in SVG format. 
+
+Use the https://github.com/plantuml/plantuml[PlantUML^] language to generate your diagrams.
