@@ -25,3 +25,7 @@
 *** xref:monospace-highlight.adoc[]
 * xref:links.adoc[]
 * xref:examples.adoc[]
+* UI Elements
+** xref:dialogs.adoc[]
+** xref:menus.adoc[]
+** xref:tabs.adoc[]
