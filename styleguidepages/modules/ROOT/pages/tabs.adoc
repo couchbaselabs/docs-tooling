@@ -21,7 +21,7 @@ image::tab-example-2.png[,,align=center]
 
 When you need to describe a tab in the UI: 
 
-* Refer to the tab as its name, followed by the word tab. 
+* Refer to the tab by its name, followed by the word tab. 
 +
 For example, the *Data Tools* tab.
 

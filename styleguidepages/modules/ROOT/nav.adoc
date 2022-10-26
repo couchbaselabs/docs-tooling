@@ -28,4 +28,5 @@
 * UI Elements
 ** xref:dialogs.adoc[]
 ** xref:menus.adoc[]
+** xref:options.adoc[]
 ** xref:tabs.adoc[]
