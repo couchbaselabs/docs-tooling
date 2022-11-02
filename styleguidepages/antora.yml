@@ -3,3 +3,4 @@ title: Docs Style Guide
 version: ~
 nav:
   - modules/ROOT/nav.adoc
+  - modules/word-list/nav.adoc
