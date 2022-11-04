@@ -1,5 +1,0 @@
-= Screen
-
-Don't use.  
-
-Refer to the whole of what is displayed in the UI to the user after they select a xref:ROOT:tabs.adoc[tab] or xref:ROOT:menus.adoc[menu item] as a xref:ROOT:pages.adoc[page], instead.
