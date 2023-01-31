@@ -38,7 +38,7 @@ Optionally describe the data types and values returned by the function in edge c
 ====
 One-line description of the example.
 
-[source,sql++]
+[source,sqlpp]
 ----
 SELECT ARRAY_AGG(["abc",1,NULL]) AS array_aggregate;
 ----
