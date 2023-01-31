@@ -28,21 +28,17 @@ For example, the following query ... [illustrates the procedure].
 
 ====
 .Query
-[source,sql++]
+[source,sqlpp]
 ----
-SELECT * FROM `travel-sample`.inventory.hotel -- <.>
+SELECT * FROM `travel-sample`.inventory.hotel
 LIMIT 1;
 ----
-
-<.> Callouts if necessary.
 
 .Result
 [source,json]
 ----
-{"hotel": "Nero's Palace"} // <.>;
+{"hotel": "Nero's Palace"}
 ----
-
-<.> Callouts if necessary.
 ====
 
 NOTE: Any further notes.
@@ -77,21 +73,17 @@ For example, the following query ... [illustrates the procedure].
 
 ====
 .Query
-[source,sql++]
+[source,sqlpp]
 ----
-SELECT * FROM `travel-sample`.inventory.hotel -- <.>
+SELECT * FROM `travel-sample`.inventory.hotel
 LIMIT 1;
 ----
-
-<.> Callouts if necessary.
 
 .Result
 [source,json]
 ----
-{"hotel": "Nero's Palace"} // <.>;
+{"hotel": "Nero's Palace"}
 ----
-
-<.> Callouts if necessary.
 ====
 
 NOTE: Any further notes.
