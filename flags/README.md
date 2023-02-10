@@ -55,6 +55,19 @@ This enables the following features:
 * It is easy to enable (commit) and disable (rollback) a given flag using either
   the Antora build, or simple manipulation using the `flags` script.
 
+## Conditionally embargo a page
+
+The `embargo.js` extension in https://github.com/couchbase/docs-site/pull/643 will
+let you prevent a page from being published, by setting the `{page-embargoed}`
+attribute.
+Combined with feature flags, this allows you to add entire *pages* that will not
+be visible to site (or search) until the flag is enabled.
+
+```adoc
+ifndef::flag-kittens[]
+:page-embargo: DO NOT PUBLISH YET!
+endif::flag-kittens[]
+```
 
 ## Enable a flag
 
