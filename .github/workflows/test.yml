@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
     inputs:
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
     call_infra:
         runs-on: ubuntu-latest
