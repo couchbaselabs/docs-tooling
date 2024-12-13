@@ -1,0 +1,13 @@
+name: Hakim testing calling docs-infra action
+
+on:
+  workflow_dispatch:
+    inputs:
+
+jobs:
+    call_infra:
+        runs-on: ubuntu-latest
+        steps:
+            - name: call docs-infra
+              run: |
+                gh workflow run -R couchbase/docs-infra antora.yml
