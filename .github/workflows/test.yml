@@ -11,5 +11,5 @@ jobs:
       - uses: actions/checkout@v4
 
   vale:
-    uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@master
+    uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     needs: checkout
