@@ -1,16 +1,16 @@
-name: Hakim testing calling docs-infra action
+name: Hakim testing
 
 on:
   workflow_dispatch:
     inputs:
 
-env:
-  GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
 jobs:
-    call_infra:
-        runs-on: ubuntu-latest
-        steps:
-            - name: call docs-infra
-              run: |
-                gh workflow run -R couchbase/docs-infra antora.yml
+  check-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout 
+        uses: actions/checkout@v4
+     
+      - name: vale thing
+        uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@master
