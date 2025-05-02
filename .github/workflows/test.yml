@@ -5,12 +5,9 @@ on:
     inputs:
 
 jobs:
-  check-pr:
-    runs-on: ubuntu-latest
+  checkout:
+    uses: actions/checkout@v4
 
-    steps:
-      - name: checkout 
-        uses: actions/checkout@v4
-     
-      - name: vale thing
-        uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@master
+  vale:
+    uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@master
+    needs: checkout
