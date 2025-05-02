@@ -6,7 +6,9 @@ on:
 
 jobs:
   checkout:
-    uses: actions/checkout@v4
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
 
   vale:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@master
