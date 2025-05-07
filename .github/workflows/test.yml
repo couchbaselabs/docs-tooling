@@ -11,4 +11,4 @@ jobs:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       repo: ${{github.repository}}
-      path: ${{vars.CHECKOUT_PATH}}
+      path: ${{github.env.CHECKOUT_PATH}}
