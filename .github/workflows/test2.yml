@@ -8,5 +8,5 @@ jobs:
     uses: couchbaselabs/docs-runner/.github/workflows/secret-test.yml@main
 
   inherit:
-    uses: couchbaselabs/docs-runner/.github/workflows/secret-test@.ymlmain
+    uses: couchbaselabs/docs-runner/.github/workflows/secret-test.yml@main
     secrets: inherit
