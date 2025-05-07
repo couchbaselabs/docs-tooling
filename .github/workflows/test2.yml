@@ -5,8 +5,8 @@ on:
 
 jobs:
   no-inherit:
-    uses: couchbaselabs/docs-runner/.github/workflows/secret-test@main
+    uses: couchbaselabs/docs-runner/.github/workflows/secret-test.yml@main
 
   inherit:
-    uses: couchbaselabs/docs-runner/.github/workflows/secret-test@main
+    uses: couchbaselabs/docs-runner/.github/workflows/secret-test@.ymlmain
     secrets: inherit
