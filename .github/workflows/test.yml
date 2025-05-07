@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  PATH: example
+  CHECKOUT_PATH: example
 
 jobs:
   checkout:
@@ -16,4 +16,4 @@ jobs:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     needs: checkout
     with:
-      path: ${{vars.PATH}}
+      path: ${{vars.CHECKOUT_PATH}}
