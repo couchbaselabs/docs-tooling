@@ -10,3 +10,10 @@ jobs:
   inherit:
     uses: couchbaselabs/docs-runner/.github/workflows/secret-test.yml@main
     secrets: inherit
+
+  call:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test secret
+        run: |
+          gh --repo couchbaselabs/docs-runner workflow run .github/workflows/secret-test.yml --ref main
