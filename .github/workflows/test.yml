@@ -2,7 +2,9 @@ name: Hakim testing
 
 on:
   workflow_dispatch:
-    inputs:
+
+env:
+  PATH: example
 
 jobs:
   checkout:
@@ -13,3 +15,5 @@ jobs:
   vale:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     needs: checkout
+    with:
+      path: ${{vars.PATH}}
