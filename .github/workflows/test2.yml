@@ -17,3 +17,5 @@ jobs:
       - name: test secret
         run: |
           gh --repo couchbaselabs/docs-runner workflow run .github/workflows/secret-test.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.ACTION_TOKEN }}
