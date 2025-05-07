@@ -7,13 +7,8 @@ env:
   CHECKOUT_PATH: example
 
 jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
   vale:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
-    needs: checkout
     with:
+      repo: ${{github.repository}}
       path: ${{vars.CHECKOUT_PATH}}
