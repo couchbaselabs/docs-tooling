@@ -1,11 +1,17 @@
 name: Hakim testing
 
 on:
-  workflow_dispatch:
+  pull_request:
+    paths: 
+      # the following should match `path:` declaration below
+      - example/**
 
 jobs:
   vale:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
-      repo: ${{github.repository}}
       path: example
+      pull_request_number: ${{ github.event.number }}
+      base_sha: ${{ github.event.pull_request.base.sha }}
+      head_sha: ${{ github.event.pull_request.head.sha }}
+      repository: ${{ github.repository }}
