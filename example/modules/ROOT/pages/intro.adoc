@@ -20,3 +20,6 @@ A list:
 ** like this
 ** and this
 ** Users that are explicitly registered on Couchbase Server as _external_; as supported either by _LDAP_, _Security Assertion Markup Language (SAML)_, or _PAM_.
+
+Roles grant access to databases.
+It's important not to access the database directly.
