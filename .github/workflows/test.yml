@@ -11,8 +11,7 @@ jobs:
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       path: example
-
       pull_request_number: ${{ github.event.number }}
       base_sha: ${{ github.event.pull_request.base.sha }}
-      head_sha: ${{ github.event.pull_request.head }}
-      repository: ${{github.repository}}
+      head_sha: ${{ github.event.pull_request.head.sha }}
+      repository: ${{ github.repository }}
