@@ -15,3 +15,4 @@ jobs:
       base_sha: ${{ github.event.pull_request.base.sha }}
       head_sha: ${{ github.event.pull_request.head.sha }}
       repository: ${{ github.repository }}
+    secrets: inherit
