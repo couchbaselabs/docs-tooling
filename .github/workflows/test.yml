@@ -15,10 +15,10 @@ jobs:
         run: |
           echo REVIEWER $REVIEWER
         env:
-          REVIEWER: ${{ github.event.requested_reviewer.name }}
+          REVIEWER: ${{ github.event.requested_reviewer.login }}
 
   vale:
-    if: github.event.requested_reviewer.name == 'tech-comm-team-couchbase'
+    if: github.event.requested_reviewer.login == 'tech-comm-team-couchbase'
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       path: example
