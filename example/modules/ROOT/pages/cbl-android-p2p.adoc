@@ -170,7 +170,7 @@ The directionality of the replication could be any of the following.
 
 * *Push and Pull:* The data is exchanged both ways.
 
-Usually, the remote is a Sync Gateway database identified through a URL.
+Typically, the remote is a Sync Gateway database identified through a URL.
 In Peer-to-Peer syncing, the remote is another Couchbase Lite database.
 
 image::ROOT:replication.png[]
