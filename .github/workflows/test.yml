@@ -2,12 +2,14 @@ name: Hakim testing
 
 on:
   pull_request:
+    types: [review_requested]
     paths: 
       # the following should match `path:` declaration below
       - example/**
 
 jobs:
   vale:
+    if: github.event.requested_reviewer == 'tech-comm-team-couchbase'
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       path: example
