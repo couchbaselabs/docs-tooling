@@ -8,8 +8,17 @@ on:
       - example/**
 
 jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reviewer
+        run: |
+          echo REVIEWER $REVIEWER
+        env:
+          REVIEWER: ${{ github.event.requested_reviewer.name }}
+
   vale:
-    if: github.event.requested_reviewer == 'tech-comm-team-couchbase'
+    if: github.event.requested_reviewer.name == 'tech-comm-team-couchbase'
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       path: example
