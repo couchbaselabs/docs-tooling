@@ -25,3 +25,5 @@ Roles grant access to databases.
 It's important not to access the database directly.
 Database access is great!
 Role based access controls are awesome!
+
+Look at xref:couchbase.adoc[] for more information about Couchbase Server.
