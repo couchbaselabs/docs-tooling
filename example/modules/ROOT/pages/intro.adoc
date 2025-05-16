@@ -28,3 +28,5 @@ Role based access controls are awesome!
 
 Look at xref:couchbase.adoc[] for more information about Couchbase Server.
 She sells seashells by the seashore.
+
+NOTE: We recommend keeping residentRatio above 10 to avoid issues like index build failures.
