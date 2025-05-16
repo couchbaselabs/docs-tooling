@@ -1,3 +1,32 @@
 # This is an example
+:description: pass:q[Roles grant users access to one or more resources.]
+
+Note that this role does not grant the ability to back up or restore users.
 
 Here is a test example.
+A second line on this example.
+
+This page is about what is so good about couchbase server. And about couchbase capella.
+
+[#table_backup_admin_role,cols="1,2,2,hrows=2"]
+|===
+5+^| Role: XDCR Admin (`replication_admin`)
+3+^|  Role: Backup Full Admin (`backup_admin`)
+|===
+
+A list:
+
+* of items
+** like this
+** and this
+** Users that are explicitly registered on Couchbase Server as _external_; as supported either by _LDAP_, _Security Assertion Markup Language (SAML)_, or _PAM_.
+
+Roles grant access to databases.
+It's important not to access the database directly.
+Database access is great!
+Role based access controls are awesome!
+
+Look at xref:couchbase.adoc[] for more information about Couchbase Server.
+She sells seashells by the seashore.
+
+NOTE: We recommend keeping residentRatio above 10 to avoid issues like index build failures.
