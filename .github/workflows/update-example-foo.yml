@@ -1,6 +1,7 @@
 name: foo
-on: workflow_dispatch
-  inputs:
+on: 
+  workflow_dispatch:
+    inputs:
       uuid:
         type: string
         description: uuid to tag and track Github Actions run
