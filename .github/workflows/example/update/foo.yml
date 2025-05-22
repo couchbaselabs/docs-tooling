@@ -1,0 +1,8 @@
+name: foo
+on: workflow-dispatch
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Starting a basic job
