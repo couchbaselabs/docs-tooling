@@ -2,12 +2,23 @@ name: Review Requested
 
 on:
   pull_request:
+    types: [review_requested]
     paths: 
       # the following should match `path:` declaration below
       - example/**
 
 jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: reviewer
+        run: |
+          echo REVIEWER $REVIEWER
+        env:
+          REVIEWER: ${{ github.event.requested_reviewer.login }}
+
   vale:
+    if: github.event.requested_reviewer.login == 'tech-comm-team-couchbase'
     uses: couchbaselabs/docs-runner/.github/workflows/vale-review.yml@main
     with:
       path: example
