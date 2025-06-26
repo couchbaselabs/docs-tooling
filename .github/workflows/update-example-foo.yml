@@ -1,0 +1,16 @@
+name: foo
+on: 
+  workflow_dispatch:
+    inputs:
+      uuid:
+        type: string
+        description: uuid to tag and track Github Actions run
+        default: ""
+
+run-name: Update foo (${{ inputs.uuid}})
+
+jobs:
+  foo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Starting a basic job

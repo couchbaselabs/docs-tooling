@@ -1,7 +1,7 @@
 # docs-tooling
 
 Useful and experimental tools for the docs team.
-Add yours to this list today!
+Add yours to this list today.
 
 ## Stable
 
