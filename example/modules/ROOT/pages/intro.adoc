@@ -1,6 +1,9 @@
 = This is an example
 
 Here is a test example.
+What do we think about couchbase?
+
+The password is entered into the screen.
 
 Adding a line for testing.
 
