@@ -3,5 +3,6 @@
 Here is a test example.
 
 Adding a line for testing.
+Minor change.
 
 
