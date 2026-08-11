@@ -1,0 +1,7 @@
+extends: conditional
+message: "'%s' hasn't been defined. Spell it out if it's unfamiliar to the audience."
+link: 'https://developers.google.com/style/abbreviations'
+level: error
+ignorecase: false
+first: '\b([A-Z]{3,5})\b'
+second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'

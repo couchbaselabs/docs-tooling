@@ -1,0 +1,14 @@
+{
+  "name": "styletest",
+  "version": "1.0.0",
+  "main": "minimal.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^11.7.0"
+  }
+}
